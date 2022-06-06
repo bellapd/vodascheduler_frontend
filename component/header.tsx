@@ -8,10 +8,14 @@ export default function Header() {
     <nav>
       <ul className={styles.ul}>
         <li>
-          <Image src={logo} width="75" height="75" />
+          <Link href="/">
+            <Image src={logo} max-width="75" max-height="75" />
+          </Link>
         </li>
+
         <li
           style={{
+            height: `inherit`,
             marginLeft: `auto`,
             fontWeight: `bold`,
             marginTop: `auto`,
@@ -22,8 +26,10 @@ export default function Header() {
             <a>About</a>
           </Link>
         </li>
+
         <li
           style={{
+            height: `inherit`,
             marginLeft: `2.5rem`,
             fontWeight: `bold`,
             marginTop: `auto`,
@@ -34,8 +40,10 @@ export default function Header() {
             <a>Progress</a>
           </Link>
         </li>
+
         <li
           style={{
+            height: `inherit`,
             marginLeft: `2.5rem`,
             marginTop: `auto`,
             fontWeight: `bold`,
